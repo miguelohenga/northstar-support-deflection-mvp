@@ -1,14 +1,17 @@
 wor
  Day 1–2: Learning & Blocker Journal
 
-Tool Assigned:[Waiting for assignment]
+Tool Assigned:[Retry/Backoff Logic]
  Date: [17th Aug]]
 
 
 Hour 1 – Initial Research
-- Key concepts discovered:
-- Questions I have:
-- Resources I found useful:
+- Key concepts discovered:*Retry logic repeats a failed opertion until it suceeds
+                          *Exponetial backoff-Doubkes waiting time after each failure
+                          *Jitter Adds randomness to prevent everyone retrying at the sametime
+- Questions I have:What's the best way to add jitter?
+- Resources I found useful:https://youtu.be/WhcBBdKjyIY?si=4RGNtVekjBJnM-Hq
+                                 https://tenacity.readthedocs.io/en/latest/
 
 
 Hour 2 – First Attempt
