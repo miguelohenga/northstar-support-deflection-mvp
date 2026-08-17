@@ -1,4 +1,4 @@
-wor
+
  Day 1–2: Learning & Blocker Journal
 
 Tool Assigned:[Retry/Backoff Logic]
@@ -14,24 +14,37 @@ Hour 1 – Initial Research
                                  https://tenacity.readthedocs.io/en/latest/
 
 
-Hour 2 – First Attempt
-- What I tried:
-- What worked:
-- What failed:
-- Error messages encountered:
-- How I fixed it (or not):
-
-
- Hour 3 – Second Attempt
-- What I tried:
-- What worked:
-- What failed:
-- Error messages encountered:
-- How I fixed it (or not):
-
-
  Mini-Prototype Status (End of Day 2)
-- Does it work?:
-- What's still broken?:
-- Time taken vs. time allocated:
-- Key lessons learned:
+Assignment 1 – Final Submission
+  What I Built
+
+A retry/backoff logic prototype for a stock syncing service.
+
+  How It Works
+1. **Simulated API**: The `WarehouseAPI` class mimics a real warehouse API that fails the first 3 times.
+2. **Exponential Backoff**: Each retry waits longer than the previous one.
+3. **Capped Backoff**: Max wait time is capped at 30 seconds.
+4. **Jitter**: Random delay is added to prevent collisions.
+
+   Code Features
+- ✅ Simulated warehouse API (fails first 3 times, succeeds on 4th)
+- ✅ Exponential backoff (doubles wait time each attempt)
+- ✅ Capped backoff (max 30 seconds)
+- ✅ Jitter (random delay to spread out retries)
+- ✅ Clear logging (shows each step)
+
+  What I Learned
+- Retry/backoff is a critical pattern for building reliable systems.
+- Jitter prevents the "thundering herd" problem.
+- Exponential backoff helps services recover from failures gracefully.
+
+  Files Submitted
+- `solo-prototype/retry_backoff.py` – Python script
+- `solo-prototype/Learning_Blocker_Journal.md` – This journal
+
+ GitHub Link
+https://github.com/miguelohenga/northstar-support-deflection-mvp/tree/feature/solo-recon/solo-prototype
+
+  Status
+✅ Assignment 1 Complete
+
