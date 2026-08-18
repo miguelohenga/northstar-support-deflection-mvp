@@ -48,3 +48,22 @@ https://github.com/miguelohenga/northstar-support-deflection-mvp/tree/feature/so
   Status
 ✅ Assignment 1 Complete
 
+  Day 3 – Original Build Complete
+
+  What I Built
+A stock syncing service that:
+- ✅ Polls a warehouse API every 5 seconds (simulated)
+- ✅ Caches stock data in memory
+- ✅ Exposes a query interface for users
+- ✅ Uses exponential backoff + jitter for retries
+- ✅ Runs polling in a background thread
+
+ Testing Results
+- ✅ Polling loop runs every 5 seconds
+- ✅ API fails first 3 times, succeeds on 4th
+- ✅ Cache updates correctly
+- ✅ Query interface returns correct data
+- ✅ All commands work as expected
+
+ Status
+✅ Day 3 Complete — Ready for Day 4 (The Pivot)
