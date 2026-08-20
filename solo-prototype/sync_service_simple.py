@@ -1,5 +1,6 @@
-# sync_service_simple.py – Clean assignment submission format
-# Implements: Threaded polling, exponential backoff with jitter, and an in-memory cache.
+# DEPRECATED: This polling-based solution is no longer used after the Day 4 pivot.
+# Kept for reference and audit trail purposes.
+# Active solution: event_checkin_kiosk.py (webhook-based)
 
 import time
 import random
